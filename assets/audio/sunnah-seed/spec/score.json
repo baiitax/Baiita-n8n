@@ -1,0 +1,1330 @@
+[
+ {
+  "bus": "wood_bass",
+  "beat": 0.0,
+  "hz": 130.813,
+  "note": "C3",
+  "vel": 0.1579,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 4.0,
+  "hz": 195.998,
+  "note": "G3",
+  "vel": 0.1679,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 8.0,
+  "hz": 174.614,
+  "note": "F3",
+  "vel": 0.1958,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 12.0,
+  "hz": 130.813,
+  "note": "C3",
+  "vel": 0.2255,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 16.0,
+  "hz": 130.813,
+  "note": "C3",
+  "vel": 0.313,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 18.0,
+  "hz": 130.813,
+  "note": "C3",
+  "vel": 0.1913,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 20.0,
+  "hz": 195.998,
+  "note": "G3",
+  "vel": 0.296,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 22.0,
+  "hz": 195.998,
+  "note": "G3",
+  "vel": 0.1865,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 23.0,
+  "hz": 293.997,
+  "note": "D4",
+  "vel": 0.124,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 24.0,
+  "hz": 174.614,
+  "note": "F3",
+  "vel": 0.287,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 26.0,
+  "hz": 174.614,
+  "note": "F3",
+  "vel": 0.1806,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 28.0,
+  "hz": 130.813,
+  "note": "C3",
+  "vel": 0.2726,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 30.0,
+  "hz": 130.813,
+  "note": "C3",
+  "vel": 0.1637,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 31.0,
+  "hz": 196.219,
+  "note": "G3",
+  "vel": 0.1107,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 32.0,
+  "hz": 174.614,
+  "note": "F3",
+  "vel": 0.1578,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 36.0,
+  "hz": 195.998,
+  "note": "G3",
+  "vel": 0.1863,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 40.0,
+  "hz": 130.813,
+  "note": "C3",
+  "vel": 0.2275,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "wood_bass",
+  "beat": 42.0,
+  "hz": 130.813,
+  "note": "C3",
+  "vel": 0.1319,
+  "kind": "bass_bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 0.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.5415,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 1.0,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.5588,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 2.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.5515,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 2.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.5357,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 3.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.5821,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 3.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.4101,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 4.0,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.3028,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 6.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.2605,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 8.0,
+  "hz": 523.251,
+  "note": "C5",
+  "vel": 0.6007,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 9.0,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.5496,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 10.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.5846,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 10.5,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.604,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 11.0,
+  "hz": 523.251,
+  "note": "C5",
+  "vel": 0.5552,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 11.5,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.4347,
+  "kind": "bar"
+ },
+ {
+  "bus": "chime",
+  "beat": 11.5,
+  "hz": 1046.502,
+  "note": "C6",
+  "vel": 0.22,
+  "kind": "bell"
+ },
+ {
+  "bus": "marimba",
+  "beat": 14.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.5154,
+  "kind": "bar"
+ },
+ {
+  "bus": "xylophone",
+  "beat": 14.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.2292,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 14.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.5595,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 15.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.5461,
+  "kind": "bar"
+ },
+ {
+  "bus": "xylophone",
+  "beat": 15.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.2362,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 15.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.4002,
+  "kind": "bar"
+ },
+ {
+  "bus": "chime",
+  "beat": 15.5,
+  "hz": 1046.502,
+  "note": "C6",
+  "vel": 0.18,
+  "kind": "bell"
+ },
+ {
+  "bus": "chime",
+  "beat": 16.0,
+  "hz": 1046.502,
+  "note": "C6",
+  "vel": 0.18,
+  "kind": "bell"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 16.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.7728,
+  "kind": "tine"
+ },
+ {
+  "bus": "xylophone",
+  "beat": 16.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.3283,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 16.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.4895,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 17.0,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.7452,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 17.0,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.4636,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 18.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.7193,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 18.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.4447,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 18.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.7344,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 18.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.4629,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 19.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.7397,
+  "kind": "tine"
+ },
+ {
+  "bus": "xylophone",
+  "beat": 19.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.3263,
+  "kind": "bar"
+ },
+ {
+  "bus": "marimba",
+  "beat": 19.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.4749,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 19.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.5667,
+  "kind": "tine"
+ },
+ {
+  "bus": "chime",
+  "beat": 19.5,
+  "hz": 1046.502,
+  "note": "C6",
+  "vel": 0.22,
+  "kind": "bell"
+ },
+ {
+  "bus": "marimba",
+  "beat": 20.0,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.5464,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 20.25,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.2217,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 21.0,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.5538,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 21.25,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.2214,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 22.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.5713,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 22.25,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.2389,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 22.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.5533,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 22.75,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.2374,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 23.0,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.5617,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 23.25,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.2443,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 23.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.408,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 24.0,
+  "hz": 523.251,
+  "note": "C5",
+  "vel": 0.6113,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 24.25,
+  "hz": 523.251,
+  "note": "C5",
+  "vel": 0.2648,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 25.0,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.6434,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 25.25,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.2625,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 26.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.6387,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 26.25,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.2453,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 26.5,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.6533,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 26.75,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.2557,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 27.5,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.449,
+  "kind": "tine"
+ },
+ {
+  "bus": "chime",
+  "beat": 27.5,
+  "hz": 1046.502,
+  "note": "C6",
+  "vel": 0.18,
+  "kind": "bell"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 28.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.6702,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 28.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.3978,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 29.0,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.6293,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 29.0,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.414,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 30.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.6081,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 30.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.4196,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 30.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.6455,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 30.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.3927,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 31.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.6442,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 31.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.4067,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 31.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.4589,
+  "kind": "tine"
+ },
+ {
+  "bus": "chime",
+  "beat": 30.0,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.16,
+  "kind": "bell"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 32.0,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.3361,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 33.5,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.2543,
+  "kind": "tine"
+ },
+ {
+  "bus": "marimba",
+  "beat": 36.0,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.327,
+  "kind": "bar"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 38.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.3569,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 39.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.283,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 40.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.557,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 41.0,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.6067,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 42.0,
+  "hz": 880.0,
+  "note": "A5",
+  "vel": 0.5917,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 42.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.557,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 43.0,
+  "hz": 659.255,
+  "note": "E5",
+  "vel": 0.5531,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 43.5,
+  "hz": 783.991,
+  "note": "G5",
+  "vel": 0.3932,
+  "kind": "tine"
+ },
+ {
+  "bus": "kalimba",
+  "beat": 44.0,
+  "hz": 587.33,
+  "note": "D5",
+  "vel": 0.4,
+  "kind": "tine"
+ },
+ {
+  "bus": "percussion",
+  "beat": 8.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0133,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 9.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0164,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 10.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0123,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 11.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0167,
+  "kind": "shaker"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 8.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0522,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 10.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0302,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "percussion",
+  "beat": 12.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0373,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 13.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0493,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 14.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0362,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 15.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0534,
+  "kind": "shaker"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 12.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1609,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 14.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0954,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 15.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0807,
+  "kind": "frame_tek"
+ },
+ {
+  "bus": "percussion",
+  "beat": 16.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.08,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 17.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1038,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 18.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0778,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 19.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1024,
+  "kind": "shaker"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 16.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.3387,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 18.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1775,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 19.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1644,
+  "kind": "frame_tek"
+ },
+ {
+  "bus": "percussion",
+  "beat": 17.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.165,
+  "kind": "finger_clap"
+ },
+ {
+  "bus": "percussion",
+  "beat": 19.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1405,
+  "kind": "finger_clap"
+ },
+ {
+  "bus": "percussion",
+  "beat": 17.75,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1046,
+  "kind": "wood_tick"
+ },
+ {
+  "bus": "percussion",
+  "beat": 20.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0798,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 21.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1066,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 22.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0733,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 23.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1023,
+  "kind": "shaker"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 20.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.3203,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 22.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1821,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 23.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1583,
+  "kind": "frame_tek"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 23.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1103,
+  "kind": "frame_tek"
+ },
+ {
+  "bus": "percussion",
+  "beat": 21.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1502,
+  "kind": "finger_clap"
+ },
+ {
+  "bus": "percussion",
+  "beat": 23.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1326,
+  "kind": "finger_clap"
+ },
+ {
+  "bus": "percussion",
+  "beat": 22.75,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0832,
+  "kind": "wood_tick"
+ },
+ {
+  "bus": "percussion",
+  "beat": 24.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0767,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 25.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1112,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 26.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0798,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 27.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1106,
+  "kind": "shaker"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 24.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.307,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 26.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1849,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 27.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1627,
+  "kind": "frame_tek"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 27.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1154,
+  "kind": "frame_tek"
+ },
+ {
+  "bus": "percussion",
+  "beat": 25.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1525,
+  "kind": "finger_clap"
+ },
+ {
+  "bus": "percussion",
+  "beat": 27.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1295,
+  "kind": "finger_clap"
+ },
+ {
+  "bus": "percussion",
+  "beat": 25.75,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1022,
+  "kind": "wood_tick"
+ },
+ {
+  "bus": "percussion",
+  "beat": 28.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0614,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 29.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0838,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 30.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.058,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 31.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0853,
+  "kind": "shaker"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 28.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.2361,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 30.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1439,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 31.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.132,
+  "kind": "frame_tek"
+ },
+ {
+  "bus": "percussion",
+  "beat": 30.75,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0701,
+  "kind": "wood_tick"
+ },
+ {
+  "bus": "percussion",
+  "beat": 36.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0397,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 37.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0493,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 38.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0399,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 39.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0531,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 40.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0497,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 41.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0702,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 42.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0532,
+  "kind": "shaker"
+ },
+ {
+  "bus": "percussion",
+  "beat": 43.5,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0703,
+  "kind": "shaker"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 40.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1956,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 42.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1179,
+  "kind": "frame_dum"
+ },
+ {
+  "bus": "frame_drum",
+  "beat": 43.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1046,
+  "kind": "frame_tek"
+ },
+ {
+  "bus": "percussion",
+  "beat": 41.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.1027,
+  "kind": "finger_clap"
+ },
+ {
+  "bus": "percussion",
+  "beat": 43.0,
+  "hz": 0.0,
+  "note": "-",
+  "vel": 0.0832,
+  "kind": "finger_clap"
+ }
+]

@@ -1,0 +1,149 @@
+{
+  "session": {
+    "title": "Sunnah Seed Theme \u2014 Morning Seeds",
+    "tag": "SS-THEME-001",
+    "bpm": 90.0,
+    "loop_seconds": 30.0,
+    "beats": 45,
+    "bars": 11,
+    "sample_rate": 48000,
+    "key": "C major (pentatonic)",
+    "time_signature": "4/4",
+    "form": "11 bars + 1 pickup beat",
+    "chord_progression": "C G F C C G F C F G C",
+    "instrumentation": "wooden xylophone, marimba, kalimba, frame drum, light hand percussion, soft finger claps, airy pad, tiny bell/chime accents, soft wooden bass",
+    "content": "instrumental only - no vocals, lyrics, recitation or chanting"
+  },
+  "balance_gain_applied_db": {
+    "kalimba": -19.17,
+    "marimba": -15.81,
+    "xylophone": -5.98,
+    "chime": -8.49,
+    "pad": -7.41,
+    "frame_drum": -4.44,
+    "percussion": 4.44,
+    "wood_bass": -10.08
+  },
+  "master_bus": {
+    "peak_before_limiter_dbfs": -7.63,
+    "limiter_max_gain_reduction_db": 0.0
+  },
+  "level_bed_master": {
+    "sample_peak_dbfs": -6.0,
+    "true_peak_dbfs": -5.94,
+    "integrated_lufs": -22.3,
+    "loudness_range_db": 16.3,
+    "headroom_below_0dbfs_db": 5.94,
+    "suggested_placement": "-18 to -22 dB under the narration track (duck 6-9 dB under speech if the editor supports it)"
+  },
+  "level_social_master": {
+    "true_peak_dbfs": -0.94,
+    "integrated_lufs": -17.3,
+    "use": "standalone / no narration on top"
+  },
+  "bus_levels": {
+    "kalimba": {
+      "loudness_db": -28.0,
+      "peak_dbfs": -15.56
+    },
+    "marimba": {
+      "loudness_db": -29.5,
+      "peak_dbfs": -15.79
+    },
+    "xylophone": {
+      "loudness_db": -37.0,
+      "peak_dbfs": -15.38
+    },
+    "chime": {
+      "loudness_db": -36.0,
+      "peak_dbfs": -19.72
+    },
+    "pad": {
+      "loudness_db": -34.8,
+      "peak_dbfs": -23.25
+    },
+    "frame_drum": {
+      "loudness_db": -38.5,
+      "peak_dbfs": -10.68
+    },
+    "percussion": {
+      "loudness_db": -38.0,
+      "peak_dbfs": -13.16
+    },
+    "wood_bass": {
+      "loudness_db": -35.5,
+      "peak_dbfs": -22.11
+    }
+  },
+  "loop_seam": {
+    "seam_step_dbfs": -38.07,
+    "worst_step_in_file_dbfs": -9.79,
+    "seam_step_percentile_of_all_steps": 81.54,
+    "seam_step_percentile_among_loud_regions": 54.96,
+    "seam_kink_percentile_of_all_samples": 97.05,
+    "seam_hf_burst_zscore": -0.071,
+    "seam_energy_step_db": 1.03,
+    "internal_barline_hf_zscore_max": 49.781,
+    "internal_barline_hf_zscore_mean": 18.307,
+    "internal_barline_median_abs_step_dbfs": -44.1,
+    "verdict": "PASS - the loop point is no more discontinuous than the ordinary bar lines inside the music"
+  },
+  "periodicity": {
+    "filter_repeatability_max_abs_diff": 0.0,
+    "max_step_at_any_of_3_stitch_points_dbfs": -38.07,
+    "max_step_anywhere_in_file_dbfs": -9.79
+  },
+  "section_profile_rms_db": {
+    "0-5s": -22.4,
+    "5-10s": -20.7,
+    "10-20s": -18.6,
+    "20-25s": -20.7,
+    "25-30s": -22.6
+  },
+  "spectrum": {
+    "sub_20_60Hz_pct": 0.0,
+    "low_60_250Hz_pct": 15.5,
+    "mid_250_2kHz_pct": 82.03,
+    "upper_mid_2k_6kHz_pct": 1.88,
+    "high_6k_12kHz_pct": 0.58,
+    "air_12k_20kHz_pct": 0.01,
+    "centroid_hz": 737.2
+  },
+  "voice_space": {
+    "dialogue_fundamental_100_400Hz_dbfs": -32.2,
+    "dialogue_intelligibility_1k_4kHz_dbfs": -35.9
+  },
+  "seam_proof_mp3": {
+    "status": "ok",
+    "path": "sunnah-seed-theme-loop-90s-x3-seam-audition.mp3",
+    "bytes": 2161196,
+    "seconds": 90.0,
+    "kbps": 192.1
+  },
+  "derived_44k1": {
+    "samples": 1323000,
+    "expected_beats": 45.0,
+    "true_peak_dbfs": -5.93
+  },
+  "preview_mp3": {
+    "status": "ok",
+    "path": "sunnah-seed-theme-loop-30s.mp3",
+    "bytes": 721196,
+    "seconds": 30.0,
+    "kbps": 192.3
+  },
+  "score": {
+    "events": 166,
+    "by_instrument": {
+      "chime": 6,
+      "frame_drum": 22,
+      "kalimba": 45,
+      "marimba": 27,
+      "percussion": 44,
+      "wood_bass": 18,
+      "xylophone": 4
+    },
+    "notes_per_second": 3.33,
+    "sustained_note_density": "deliberately low - the bed is written to leave room for dhikr, dialogue and narration"
+  }
+}
