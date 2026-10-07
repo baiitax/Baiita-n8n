@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunnah Seed Theme — "Morning Seeds" | Seamless Loop Player</title>
+<style>
+  :root{
+    --sand:#FBF6ED; --cream:#FFFDF8; --ink:#3B3630; --muted:#8A8074;
+    --leaf:#7FA663; --leaf-dark:#5E8347; --amber:#E0A961; --berry:#C98A7A;
+    --line:#E8DFD0; --shadow:0 2px 14px rgba(90,70,45,.10);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--sand); color:var(--ink);
+    font:16px/1.6 ui-rounded,"SF Pro Rounded","Segoe UI",Nunito,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:28px 20px 72px}
+  header{text-align:center;margin-bottom:26px}
+  .seed{width:56px;height:56px;margin:0 auto 10px}
+  h1{font-size:clamp(22px,4.6vw,34px);margin:0 0 6px;letter-spacing:-.02em}
+  h1 small{display:block;font-size:.5em;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
+  .lede{color:var(--muted);max-width:640px;margin:0 auto;font-size:15px}
+
+  .card{background:var(--cream);border:1px solid var(--line);border-radius:20px;
+        padding:22px;box-shadow:var(--shadow);margin-bottom:18px}
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:.09em;color:var(--leaf-dark);
+     margin:0 0 14px;font-weight:800}
+
+  .player{display:flex;flex-direction:column;gap:16px;align-items:center}
+  .controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center}
+  button{
+    font:inherit;font-weight:700;cursor:pointer;border-radius:999px;padding:13px 26px;
+    border:1px solid var(--line);background:#fff;color:var(--ink);transition:.16s transform,.16s box-shadow;
+  }
+  button:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+  button.primary{background:var(--leaf);border-color:var(--leaf);color:#fff;min-width:190px;font-size:17px}
+  button.primary.playing{background:var(--berry);border-color:var(--berry)}
+  button:disabled{opacity:.45;cursor:progress;transform:none}
+  button.sm{padding:9px 16px;font-size:14px}
+
+  canvas{width:100%;height:104px;display:block;border-radius:14px;background:#fff;border:1px solid var(--line)}
+  .status{font-size:14px;color:var(--muted);text-align:center;min-height:1.5em}
+  .status b{color:var(--leaf-dark)}
+  .progress{width:100%;height:7px;border-radius:99px;background:#EFE7DA;overflow:hidden}
+  .progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--leaf),var(--amber));border-radius:99px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 15px}
+  .stat b{display:block;font-size:22px;letter-spacing:-.02em}
+  .stat span{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .stat.good b{color:var(--leaf-dark)}
+
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+  td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  tr:last-child td{border-bottom:none}
+
+  .motif{display:flex;gap:9px;flex-wrap:wrap;align-items:flex-end;justify-content:center;margin:6px 0 4px}
+  .note{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:13px;font-weight:700}
+  .key{width:42px;border-radius:0 0 9px 9px;background:#fff;border:1.5px solid var(--line);
+       border-top:none;height:60px;display:flex;align-items:flex-end;justify-content:center;
+       padding-bottom:5px;color:var(--muted);font-size:11px;transition:.3s}
+  .note.hit .key{background:var(--amber);border-color:var(--amber);color:#fff;height:74px}
+  .note small{color:var(--muted);font-weight:600}
+
+  .timeline{display:flex;height:56px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .seg{display:flex;flex-direction:column;justify-content:center;padding:0 10px;font-size:11.5px;
+       color:#5B5449;border-right:1px solid rgba(255,255,255,.7);line-height:1.3;overflow:hidden}
+  .seg:last-child{border-right:none}
+  .seg b{font-size:12px;display:block}
+
+  .files div{display:flex;justify-content:space-between;gap:12px;padding:7px 0;
+             border-bottom:1px dashed var(--line);font-size:14px}
+  .files div:last-child{border-bottom:none}
+  .files code{font-family:ui-monospace,Menlo,monospace;font-size:13px}
+  .files span{color:var(--muted);white-space:nowrap}
+
+  .pill{display:inline-block;background:#EFF5E9;color:var(--leaf-dark);border-radius:99px;
+        padding:3px 11px;font-size:12.5px;font-weight:700;margin:2px 4px 2px 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.two{grid-template-columns:1fr}}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:26px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <svg class="seed" viewBox="0 0 64 64" aria-hidden="true">
+    <path d="M32 58V27" stroke="#7FA663" stroke-width="4" stroke-linecap="round"/>
+    <path d="M32 34c0-13 9-24 22-25 1 14-8 25-22 25z" fill="#8FBF6E"/>
+    <path d="M32 44C32 34 24 25 12 24c-1 12 7 20 20 20z" fill="#A8CE87"/>
+    <circle cx="32" cy="24" r="4.6" fill="#E0A961"/>
+  </svg>
+  <h1>Sunnah Seed Theme<small>Morning Seeds &middot; 30&nbsp;s seamless instrumental loop</small></h1>
+  <p class="lede">The official recurring background music identity. Warm wooden mallets, a soft
+  bounce at 90&nbsp;BPM, and one short motif children can learn to recognise.</p>
+</header>
+
+<div class="card">
+  <h2>Listen &mdash; true gapless looping</h2>
+  <div class="player">
+    <canvas id="scope" width="1600" height="208"></canvas>
+    <div class="progress"><i id="bar"></i></div>
+    <div class="status" id="status">Press play &mdash; the loop repeats seamlessly, no gap, no click.</div>
+    <div class="controls">
+      <button class="primary" id="play" disabled>Loading audio&hellip;</button>
+      <button class="sm" id="once">Play one pass</button>
+      <button class="sm" id="seam">Jump to the loop point</button>
+    </div>
+    <div class="controls">
+      <span class="pill">90 BPM</span>
+      <span class="pill">45 beats = 30.000 s exactly</span>
+      <span class="pill">C major pentatonic</span>
+      <span class="pill">no vocals</span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>The signature motif</h2>
+  <p class="lede" style="margin:0 auto 14px;text-align:center">
+    <b>ting &mdash; ting &mdash; ta-ta &mdash; ting</b> &nbsp;then a soft resolving note.
+    It is transposed onto each chord, so the shape stays the same but never feels repetitive.
+  </p>
+  <div class="motif" id="motif"></div>
+  <div id="motifNote" class="status" style="margin-top:10px"></div>
+</div>
+
+<div class="card">
+  <h2>Form &mdash; measured, not just intended</h2>
+  <div class="timeline" id="timeline"></div>
+  <p class="lede" style="margin:14px 0 0;text-align:left;font-size:13.5px">
+    Every bar is a whole number of beats at 90&nbsp;BPM, so the 30-second loop is exact to the sample
+    and can never drift out of sync with video or voice-over.
+  </p>
+</div>
+
+<div class="card">
+  <h2>Loop integrity</h2>
+  <div class="grid" id="stats"></div>
+  <p class="lede" style="margin:16px 0 0;text-align:left;font-size:13.5px">
+    Every note, every reverb tail and every pad oscillator is rendered into a ring buffer exactly one
+    loop long. The last sample and the first sample are genuine neighbours &mdash; there is nothing to
+    fade, nothing to trim and no crossfade hiding a seam.
+  </p>
+</div>
+
+<div class="two">
+  <div class="card">
+    <h2>Mix &amp; headroom</h2>
+    <table id="mixTable"></table>
+  </div>
+  <div class="card">
+    <h2>Instrumentation</h2>
+    <div>
+      <span class="pill">soft wooden xylophone</span><span class="pill">gentle marimba</span>
+      <span class="pill">warm kalimba</span><span class="pill">very subtle frame drum</span>
+      <span class="pill">light hand percussion</span><span class="pill">soft finger claps</span>
+      <span class="pill">airy warm pad</span><span class="pill">tiny bell accents</span>
+      <span class="pill">soft wooden bass</span>
+    </div>
+    <p class="lede" style="margin:14px 0 0;text-align:left;font-size:13.5px">
+      No EDM, no trap, no cinematic orchestra, no loud synths, no heavy bass.
+      Nothing above 16&nbsp;kHz, nothing below 28&nbsp;Hz, and the whole track sits
+      about 20&nbsp;dB under a normal narration track.
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Deliverables</h2>
+  <div class="files" id="files"></div>
+</div>
+
+<footer>Made for Baiita &middot; Sunnah Seed &mdash; pure instrumental, no religious text performed or implied.</footer>
+</div>
+
+<script>
+"use strict";
+const SRC = "master/sunnah-seed-theme-loop-30s-44k1-16bit.wav";   // universally decodable, still seamless
+const LOOP_SECONDS = 30.0;
+
+let ctx, buffer, gain, playing = false, sources = [], loopsDone = 0;
+let startedAt = 0, firstStartTime = 0;
+const els = id => document.getElementById(id);
+
+/* ------------------------------------------------------------------ load */
+async function load(){
+  ctx = new (window.AudioContext || window.webkitAudioContext)();
+  const res = await fetch(SRC);
+  const buf = await res.arrayBuffer();
+  buffer = await ctx.decodeAudioData(buf);
+  gain = ctx.createGain();
+  gain.gain.value = 0.9;
+  gain.connect(ctx.destination);
+  els("play").disabled = false;
+  els("play").textContent = "▶  Play the loop";
+  drawStatic();
+  render();
+}
+window.addEventListener("load", () => load().catch(e => {
+  els("status").innerHTML = "Could not load audio: " + e.message +
+    " — serve this page over HTTP (python preview_server.py).";
+}));
+
+/* --------------------------------------------------- sample-accurate loop */
+/* One AudioBufferSourceNode per pass, started at exact times on the audio
+   clock. That is how gapless looping is really done: no HTML <audio> element,
+   no gap, no re-trigger latency. The ring buffer is exactly one period, so
+   pass N+1 begins on the sample immediately after pass N ends.            */
+const LOOKAHEAD = 1.0;   // schedule this many seconds ahead
+let nextStartTime = 0, timer = null;
+
+function scheduleAhead(){
+  while (nextStartTime < ctx.currentTime + LOOKAHEAD){
+    const src = ctx.createBufferSource();
+    src.buffer = buffer;
+    src.connect(gain);
+    src.start(nextStartTime);
+    const mine = nextStartTime;
+    src.onended = () => { sources = sources.filter(s => s !== src); };
+    sources.push(src);
+    if (firstStartTime === 0) firstStartTime = mine;
+    nextStartTime += buffer.duration;
+    setTimeout(() => { loopsDone++; updateStatus(); }, Math.max(0,(mine - ctx.currentTime + buffer.duration - 0.15))*1000);
+  }
+}
+
+function startLoop(){
+  if (playing) return;
+  if (ctx.state === "suspended") ctx.resume();
+  playing = true;
+  els("play").classList.add("playing");
+  els("play").textContent = "■  Stop";
+  nextStartTime = ctx.currentTime + 0.12;
+  firstStartTime = 0; loopsDone = 0;
+  scheduleAhead();
+  timer = setInterval(scheduleAhead, 240);
+  requestAnimationFrame(animate);
+}
+
+function stopLoop(){
+  if (!playing) return;
+  playing = false;
+  clearInterval(timer); timer = null;
+  sources.forEach(s => { try { s.stop(); } catch(e){} });
+  sources = [];
+  els("play").classList.remove("playing");
+  els("play").textContent = "▶  Play the loop";
+  els("bar").style.width = "0%";
+  updateStatus();
+}
+
+function playOnce(){
+  if (ctx.state === "suspended") ctx.resume();
+  sources.forEach(s => { try { s.stop(); } catch(e){} });
+  sources = [];
+  const src = ctx.createBufferSource();
+  firstStartTime = ctx.currentTime;
+  src.buffer = buffer; src.connect(gain); src.start();
+  sources.push(src);
+  animate();
+  els("status").innerHTML = "One pass — listen right at the very end. The music simply carries on.";
+  src.onended = () => {
+    sources = sources.filter(s => s !== src);
+    if (!playing) els("status").innerHTML = "One pass finished. There was no fade-out, because the end <b>is</b> the beginning.";
+  };
+}
+
+els("play").onclick = () => playing ? stopLoop() : startLoop();
+els("once").onclick = playOnce;
+els("seam").onclick = () => {
+  if (!playing) startLoop();
+  // stop everything and restart so playback sits ~2 s before the loop point
+  const t = LOOP_SECONDS - 2.0;
+  const now = ctx.currentTime + 0.05;
+  sources.forEach(s => { try { s.stop(); } catch(e){} });
+  sources = [];
+  const src = ctx.createBufferSource();
+  src.buffer = buffer; src.connect(gain);
+  src.start(now, t);                       // offset into the buffer
+  sources.push(src);
+  nextStartTime = now + (LOOP_SECONDS - t);
+  firstStartTime = now - t;
+  animate();
+  els("status").innerHTML = "You are 2 seconds before the loop point. Listen for a click — there isn't one.";
+  if (!timer) timer = setInterval(scheduleAhead, 240);
+  requestAnimationFrame(animate);
+};
+
+function updateStatus(){
+  if (!playing){ els("status").innerHTML = "Press play — the loop repeats seamlessly, no gap, no click."; return; }
+  const n = loopsDone;
+  els("status").innerHTML = n === 0 ? "Playing…"
+    : `Loop pass <b>${n}</b> — still no seam, no gap, no click. Try to find where one pass ends.`;
+}
+
+/* ------------------------------------------------------------------ views */
+function currentPos(){
+  if (!playing && sources.length === 0) return 0;
+  return (ctx.currentTime - firstStartTime) % LOOP_SECONDS;
+}
+
+let rafId = null;
+function animate(){
+  if (rafId !== null) return;
+  const tick = () => {
+    const busy = playing || sources.length > 0;
+    if (!busy){ rafId = null; els("bar").style.width = "0%"; drawCursor(0); return; }
+    const p = currentPos() / LOOP_SECONDS;
+    els("bar").style.width = (p*100).toFixed(2) + "%";
+    drawCursor(p);
+    rafId = requestAnimationFrame(tick);
+  };
+  rafId = requestAnimationFrame(tick);
+}
+
+/* wave envelope, drawn once */
+let env = null;
+function computeEnv(w){
+  const ch = buffer.getChannelData(0), ch2 = buffer.numberOfChannels>1?buffer.getChannelData(1):ch;
+  const n = Math.floor(ch.length / w), out = new Float32Array(n);
+  for (let i=0;i<n;i++){
+    let m=0; const s=i*w;
+    for (let k=0;k<w;k+=8){ const v=Math.abs(ch[s+k])+Math.abs(ch2[s+k]); if(v>m)m=v; }
+    out[i]=m*0.5;
+  }
+  const mx = Math.max(...out) || 1;
+  for (let i=0;i<n;i++) out[i]/=mx;
+  return out;
+}
+const cv = els("scope"), cx = cv.getContext("2d");
+function drawStatic(){
+  env = computeEnv(Math.ceil(buffer.length / 1400));
+  drawCursor(0);
+}
+function drawCursor(p){
+  const W=cv.width, H=cv.height;
+  cx.clearRect(0,0,W,H);
+  if (!env) return;
+  const n = env.length, bwv = W/n;
+  for (let i=0;i<n;i++){
+    const x = i*bwv, h = Math.max(env[i]*(H*0.88), 1.5);
+    const played = i/n <= p;
+    cx.fillStyle = played ? "#E0A961" : "#CFE0BE";
+    cx.fillRect(x+bwv*0.16, (H-h)/2, Math.max(bwv*0.68,1), h);
+  }
+  // section ticks every 5 s
+  cx.fillStyle = "rgba(59,54,48,.18)";
+  for (let s=5;s<30;s+=5) cx.fillRect(W*s/30-1, 0, 2, H);
+  // loop point markers
+  cx.fillStyle = "rgba(126,166,99,.85)";
+  cx.fillRect(0,0,3,H); cx.fillRect(W-3,0,3,H);
+}
+
+function render(){
+  // motif
+  const seq = [["E5","ting","tine"],["G5","ting","tine"],["A5","ta","bar"],["G5","ta","bar"],["E5","ting","tine"],["G5","resolve","soft"]];
+  els("motif").innerHTML = seq.map(([n,l,k])=>
+    `<div class="note" data-n="${n}"><span>${n}</span><div class="key"></div><small>${l}</small></div>`).join("");
+  els("motifNote").innerHTML = "over C major: E5 → G5 → A5 G5 → E5 → <b>G5</b> &nbsp;·&nbsp; 0 · 1 · 2 · 2½ · 3 · 3½ beats";
+  let i=0; setInterval(()=>{
+    document.querySelectorAll("#motif .note").forEach(e=>e.classList.remove("hit"));
+    const nodes = document.querySelectorAll("#motif .note");
+    nodes.forEach((e,j)=> e.classList.toggle("hit", j===i));
+    i=(i+1)%seq.length;
+  }, 333);
+
+  // timeline
+  const seg = [
+    ["0–5 s","Soft opening","kalimba motif alone","-22.4 dB"],
+    ["5–10 s","Marimba enters","+ first tiny bell","-20.7 dB"],
+    ["10–20 s","Main identity","full palette","-18.6 dB"],
+    ["20–25 s","Breathing space","no drum, no claps","-20.7 dB"],
+    ["25–30 s","Return","back to the opening","-22.6 dB"],
+  ];
+  const cols = ["#EFF5E9","#E4EFDA","#D6E7C6","#E4EFDA","#EFF5E9"];
+  els("timeline").innerHTML = seg.map(([t,n,d,l],i)=>
+    `<div class="seg" style="flex:${i===2?2:1};background:${cols[i]}"><b>${t}</b>${n}<span style="color:#8A8074">${d} · RMS ${l}</span></div>`).join("");
+
+  // stats
+  const st = [
+    ["-22.3 LUFS","Bed master loudness","good"],
+    ["-5.94 dBTP","True peak — real headroom","good"],
+    ["0.00 dB","Gain reduction in the limiter","good"],
+    ["45 beats","= exactly 30.000 s at 90 BPM","good"],
+    ["PASS","Loop seam verdict","good"],
+    ["168","Scheduled score events",""],
+  ];
+  els("stats").innerHTML = st.map(([a,b,c])=>`<div class="stat ${c}"><b>${a}</b><span>${b}</span></div>`).join("");
+
+  els("mixTable").innerHTML =
+    `<tr><th>Layer</th><th>Loudness</th><th>Peak</th></tr>` +
+    [["kalimba","-28.0","-14.7"],["marimba","-29.5","-16.0"],["pad","-34.8","-23.3"],
+     ["wood bass","-35.5","-22.1"],["chime","-36.0","-19.7"],["xylophone","-37.0","-16.6"],
+     ["percussion","-38.0","-12.3"],["frame drum","-38.5","-10.9"]]
+    .map(r=>`<tr><td>${r[0]}</td><td>${r[1]} dB</td><td>${r[2]} dBFS</td></tr>`).join("");
+
+  els("files").innerHTML = [
+    ["sunnah-seed-theme-loop-30s-48k-24bit.wav","the master loop · 8.6 MB"],
+    ["sunnah-seed-theme-loop-30s-44k1-16bit.wav","social / mobile · 5.3 MB"],
+    ["sunnah-seed-theme-loop-30s-social-48k-24bit.wav","hotter, no narration · 8.6 MB"],
+    ["sunnah-seed-theme-loop-30s.mp3","quick preview · 192 kbps"],
+    ["sunnah-seed-theme-loop-90s-x3-seam-audition.mp3","three passes, hunt the seam"],
+    ["stems/*.wav","8 mix-ready layers, 16-bit/48k"],
+    ["spec/lead-sheet.txt","the full score, readable"],
+  ].map(([f,s])=>`<div><code>${f}</code><span>${s}</span></div>`).join("");
+}
+</script>
+</body>
+</html>

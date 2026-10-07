@@ -1,0 +1,16 @@
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Regenerable audio intermediates ----------------------------------------
+# The stems are rendered in ~16 s by tools/audio/sunnah_seed/compose.py and are
+# the only large regenerable artefact here. The masters ARE committed: they are
+# the deliverable.
+assets/audio/sunnah-seed/stems/
+
+# --- OS / editors -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
