@@ -1,0 +1,22 @@
+# Local environment and generated secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies / build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Runtime data and local Docker overrides
+data/
+docker-compose.override.yml
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+npm-debug.log*

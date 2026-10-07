@@ -1,0 +1,18 @@
+{
+  "name": "baiita-n8n",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "A polished Baiita workspace demo and secure Docker Compose launcher for self-hosted n8n.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "setup": "node scripts/setup-env.mjs",
+    "test": "node --test",
+    "check": "node --check server.mjs && node --check app.js && node --test"
+  }
+}
