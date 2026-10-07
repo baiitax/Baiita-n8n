@@ -257,11 +257,18 @@ function stopLoop(){
 
 function playOnce(){
   if (ctx.state === "suspended") ctx.resume();
+  sources.forEach(s => { try { s.stop(); } catch(e){} });
+  sources = [];
   const src = ctx.createBufferSource();
-  src.buffer = buffer; src.connect(gain); src.start(); requestAnimationFrame(animate);
-  setTimeout(() => { els("bar").style.width = "0%"; }, buffer.duration * 1000 + 60);
-  els("status").innerHTML = "One pass — listen right at the end. The music simply carries on.";
-  src.onended = () => { els("status").innerHTML = "One pass finished. There was no fade-out, because the end <b>is</b> the beginning."; };
+  firstStartTime = ctx.currentTime;
+  src.buffer = buffer; src.connect(gain); src.start();
+  sources.push(src);
+  animate();
+  els("status").innerHTML = "One pass — listen right at the very end. The music simply carries on.";
+  src.onended = () => {
+    sources = sources.filter(s => s !== src);
+    if (!playing) els("status").innerHTML = "One pass finished. There was no fade-out, because the end <b>is</b> the beginning.";
+  };
 }
 
 els("play").onclick = () => playing ? stopLoop() : startLoop();
@@ -279,6 +286,7 @@ els("seam").onclick = () => {
   sources.push(src);
   nextStartTime = now + (LOOP_SECONDS - t);
   firstStartTime = now - t;
+  animate();
   els("status").innerHTML = "You are 2 seconds before the loop point. Listen for a click — there isn't one.";
   if (!timer) timer = setInterval(scheduleAhead, 240);
   requestAnimationFrame(animate);
@@ -297,13 +305,18 @@ function currentPos(){
   return (ctx.currentTime - firstStartTime) % LOOP_SECONDS;
 }
 
+let rafId = null;
 function animate(){
-  if (playing){
+  if (rafId !== null) return;
+  const tick = () => {
+    const busy = playing || sources.length > 0;
+    if (!busy){ rafId = null; els("bar").style.width = "0%"; drawCursor(0); return; }
     const p = currentPos() / LOOP_SECONDS;
     els("bar").style.width = (p*100).toFixed(2) + "%";
     drawCursor(p);
-    requestAnimationFrame(animate);
-  }
+    rafId = requestAnimationFrame(tick);
+  };
+  rafId = requestAnimationFrame(tick);
 }
 
 /* wave envelope, drawn once */
